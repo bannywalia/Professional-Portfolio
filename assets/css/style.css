@@ -98,7 +98,7 @@ header nav ul li a:hover {
 
 .title {
   border-right: 5px solid var(--thirdColor);
-  min-height: 100%;
+  min-height: 90%;
   text-align: right;
   padding-right: 40px;
   min-width: 20%;
@@ -106,7 +106,7 @@ header nav ul li a:hover {
 }
 
 .title h2 {
-  font-size: 48px;
+  font-size: 40px;
 }
 
 
@@ -121,7 +121,7 @@ header nav ul li a:hover {
 
 .aboutMe p {
   font-size: 20px;
-  padding: 0 30px;
+  padding: 10px 10px 10px 10px;
   line-height: 1.6;
   width: 90%;
 }
@@ -139,6 +139,7 @@ header nav ul li a:hover {
   color: var(--secondary);
 }
 
+/* style settings for grid layout */
 .projectsGridWrapper {
   width: 80%;
   height: 500px;
