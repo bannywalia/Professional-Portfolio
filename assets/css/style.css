@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+:root {
+  --primary: #201E50;
+  --secondary: #C0C0C0;
+  --thirdColor: #1A5E63;
+
+}
+/*default settings for body*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--secondary);
+
+}
+
+/*Header styling*/
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: var(--primary);
+  font-size: 1.2vw;
+  color: var(--thirdColor);
+  align-items: center;
+}
+
+header div {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 5);
+}
+
+header h1 {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10px;
+  border: 5px solid var(--secondary);
+}
+
+header nav ul {
+  display: flex; /* Flex container to display the child elements as flex with flex-end, wrap, and align the items in center */
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding-right: 0px;
+}
+
+nav ul a {
+  background-color: var(--secondary);
+  border-radius: 20px;
+}
+
+header nav ul li a {
+  padding: 8px;
+  font-size: 28px;
+  margin: 20px 20px 0 0;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  background: var(--thirdColor);
+  color: var(--primary);
+  border-radius: 20px;
+  border: groove 5px var(--secondary);
+}
+
+
+/*Hero styling for moving background*/
+.hero {
+  height: 300px;
+  background-image: url("../css/images/dataBackground.jpg");
+  border-bottom-left-radius: 30px 30px;
+  border-bottom-right-radius: 30px 30px;
+  background-size: cover;
+  background-position: 100% 13%;
+  background-attachment: fixed; /* Image scrolls with the page */
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* Row type rather than column type to showcase usage */
+  align-items: flex-end;
+}
+
+.heroSubtitle {
+  /* Styling to the Welcome tag */
+  padding-bottom: 15px;
+  padding-right: 15px;
+  color: var(--secondary);
+  font-size: 40px;
+}
+
+
+
+.title {
+  border-right: 5px solid var(--thirdColor);
+  min-height: 100%;
+  text-align: right;
+  padding-right: 40px;
+  min-width: 20%;
+  max-width: 20%;
+}
+
+.title h2 {
+  font-size: 48px;
+}
+
+
+/*about me styling*/
+.aboutMe {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 30px;
+  color: var(--primary);
+}
+
+.aboutMe p {
+  font-size: 20px;
+  padding: 0 30px;
+  line-height: 1.6;
+  width: 90%;
+}
+
+/*work styling*/
+.myWork {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary);
+  border-radius: 30px 30px 30px 30px;
+}
+
+.myWork h2 {
+  color: var(--secondary);
+}
+
+.projectsGridWrapper {
+  width: 80%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.projectsGrid {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.project {
+  border: solid;
+  color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+}
+
+.project:hover {
+  opacity: 1.0;
+  border: groove 15px var(--thirdColor);
+}
+
+/*got image for first product, and links all to my Github, will replace as more projects go underway*/
+.HTML {
+  grid-column: 1/3;
+  grid-row: span 2;
+  background-image: url("..//css/images/Module\ 1.png");
+}
+
+.Place1 {
+  background-image: url("../css/images/Javascript\ background.jpeg");
+  background-position: 50% 15%;
+}
+
+.Place2 {
+  background-image: url("../css/images/Html5.jpeg");
+  background-position: 60% 50%;
+}
+
+.Place3 {
+  background-image: url("../css/images/node.js\ pic.png");
+  background-position: 50% 15%;
+}
+
+.Place4 {
+  background-image: url("../css/images/AMGGTR.webp");
+}
+
+.projectLabel {
+  color: var(--thirdColor);
+  padding: 10px;
+}
+
+/*contact me fused with footer*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  color: var(--primary);
+}
+
+.contentWrapper {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contactList {
+  width: 60%;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+footer ul li {
+  font-weight: bold;
+
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: var(--primary);
+  padding: 8px;
+  font-weight: bold;
+}
+
+footer ul li a:hover {
+  background: var(--thirdColor);
+  color: var(--secondary);
+  border-radius: 15px;
+}
+
+
+/*Media for Tablets*/
+@media screen and (max-width: 768px) {
+  .hero {
+    font-size: 28px;
+    padding-right: 20px;
+    font-size: 35px;
+  }
+
+  .hero .title h2 {
+    font-size: 35px;
+  }
+
+  .aboutMe p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+/* Media for Mobile Screens or smaller*/
+@media screen and (max-width: 575px) {
+  header {
+    justify-content: center;
+    padding: 20px;
+  }
+
+  header nav ul {
+    min-height: 80px;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .aboutMe {
+    flex-direction: column;
+  }
+
+  .title {
+    border-bottom: 5px solid var(--pop);
+    border-right: none;
+    text-align: center;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .aboutMe p {
+    font-size: 16px;
+    line-height: 1.6;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .myWork {
+    flex-direction: column;
+    padding: 30px 0;
+  }
+
+  .projectsGridWrapper {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .projectsGrid {
+    width: 80%;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer ul {
+    flex-direction: column;
+  }
+
+  .contentWrapper {
+    width: 100%;
+  }
+
+  footer ul li {
+    padding: 10px;
+    text-align: center;
+  }
+}
