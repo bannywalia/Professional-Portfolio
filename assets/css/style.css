@@ -5,6 +5,8 @@
 
 }
 
+
+
 :root {
   --primary: #201E50;
   --secondary: #C0C0C0;
@@ -71,13 +73,25 @@ header nav ul li a:hover {
 
 /*Hero styling for moving background*/
 .hero {
-  height: 300px;
+  height: 400px;
   background-image: url("../css/images/dataBackground.jpg");
   border-bottom-left-radius: 30px 30px;
   border-bottom-right-radius: 30px 30px;
   background-size: cover;
   background-position: 100% 13%;
   background-attachment: fixed; /* Image scrolls with the page */
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* Row type rather than column type to showcase usage */
+  align-items: flex-end;
+}
+/* added picture of myself and played with settings*/
+ img {
+  height: 250px;
+  align-items: flex-end;
+  border: solid 5px var(--primary);
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
