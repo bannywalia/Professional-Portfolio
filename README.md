@@ -1,15 +1,15 @@
 ## Banny Walia's Professional Portfolio
 
 ### Desktop Preview
-![Desktop](./Desktop.png "Desktop")
+![Desktop](./Readme%20Pics/Desktop.png "Desktop")
 
 ### Smaller Screen Previews
 
 #### Tablet Preview
-![Desktop](./Tablet.png "Desktop")
+![Desktop](./Readme%20Pics/Tablet.png "Desktop")
 
 #### Smartphone Preview
-![Desktop](./Smartphone.png "Desktop")
+![Desktop](./Readme%20Pics/Smartphone.png "Desktop")
 
 ## How to Get There
 
@@ -21,4 +21,4 @@ https://bannywalia.github.io/Professional-Portfolio/
 
 ## Navigation Bar
 
-![Desktop](./Nav.png "Desktop")
+![Desktop](./Readme%20Pics/Nav.png "Desktop")
